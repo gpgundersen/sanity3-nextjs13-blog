@@ -11,8 +11,6 @@ type Props = {
     }
 }
 
-export const revalidate = 14400;
-
 export async function generateStaticParams() {
     const query = groq`*[_type=='post']
     {
