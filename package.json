@@ -18,7 +18,8 @@
     "react-portable-text": "^0.5.1",
     "react-svg": "^15.1.20",
     "sanity": "^3.0.0",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "vercel": "^28.12.5"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
