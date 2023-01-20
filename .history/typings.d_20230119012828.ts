@@ -24,7 +24,6 @@ interface Author extends Base {
 }
 
 interface Glossary extends Base {
-    [x: string]: any
     definition: Block[]
     image: Image
     term: string
