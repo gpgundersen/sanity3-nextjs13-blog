@@ -39,9 +39,9 @@ async function Post({params: { slug }}: Props) {
     const post: Post = await client.fetch(query, { slug })
 
     return (
-        <article className="px-10 pb-28">
+        <article className="px-12 pb-28 max-w-4xl mr-auto">
             <section className="space-y-2 border border-slate-500 text-white">
-            <div className="relative min-h-56 flex flex-col md:flex-row">
+            <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
             <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
                 <Image
                     className="object-cover object-center mx-auto"
@@ -52,9 +52,9 @@ async function Post({params: { slug }}: Props) {
             </div>
 
         <section className="p-5 bg-slate-500 w-full">
-            <div className="flex flex-col md:flex-row  justify-between gap-y-5">
+            <div className="flex flex-col md:flex-row  justify-between">
             <div>
-                <h1 className="text-3xl font-semibold">{post.title}</h1>
+                <h1 className="text-4xl font-extrabold">{post.title}</h1>
 
                 <p className="font-serif font-normal">
                     {new Date(post._createdAt).toLocaleDateString("en-US", {
@@ -79,7 +79,7 @@ async function Post({params: { slug }}: Props) {
                     {/*TODO Author BIO*/}
                 </div>
             </div>
-            <div className="flex items-center justify-end space-x-2">
+            <div className="flex items-center justify-end mt-auto space-x-2">
                 {post.categories.map ((category) => (
                     <p key={category._id} className="bg-gray-800 text-white px-3 py-1 
                     rounded-full text-sm font-semibold mt-4">{category.title}</p>

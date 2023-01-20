@@ -39,9 +39,9 @@ async function Post({params: { slug }}: Props) {
     const post: Post = await client.fetch(query, { slug })
 
     return (
-        <article className="px-10 pb-28">
+        <article className="px-12 pb-28 max-w-4xl mr-auto">
             <section className="space-y-2 border border-slate-500 text-white">
-            <div className="relative min-h-56 flex flex-col md:flex-row">
+            <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
             <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
                 <Image
                     className="object-cover object-center mx-auto"

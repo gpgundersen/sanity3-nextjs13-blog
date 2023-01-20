@@ -12,7 +12,7 @@ type Props = {
   }
 }
 
-export const revalidate = 1800;
+export const revalidate = 14400;
 
 export async function generateStaticParams() {
     const query = groq`*[_type=='glossary']

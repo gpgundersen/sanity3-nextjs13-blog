@@ -11,7 +11,7 @@ type Props = {
     }
 }
 
-export const revalidate = 1800;
+export const revalidate = 14400;
 
 export async function generateStaticParams() {
     const query = groq`*[_type=='post']
@@ -39,9 +39,9 @@ async function Post({params: { slug }}: Props) {
     const post: Post = await client.fetch(query, { slug })
 
     return (
-        <article className="px-10 pb-28">
+        <article className="px-12 pb-28 max-w-4xl mr-auto">
             <section className="space-y-2 border border-slate-500 text-white">
-            <div className="relative min-h-56 flex flex-col md:flex-row">
+            <div className="relative min-h-56 flex flex-col md:flex-row justify-between">
             <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
                 <Image
                     className="object-cover object-center mx-auto"
@@ -52,9 +52,9 @@ async function Post({params: { slug }}: Props) {
             </div>
 
         <section className="p-5 bg-slate-500 w-full">
-            <div className="flex flex-col md:flex-row  justify-between gap-y-5">
+            <div className="flex flex-col md:flex-row  justify-between">
             <div>
-                <h1 className="text-3xl font-semibold">{post.title}</h1>
+                <h1 className="text-4xl font-extrabold">{post.title}</h1>
 
                 <p className="font-serif font-normal">
                     {new Date(post._createdAt).toLocaleDateString("en-US", {
@@ -79,7 +79,7 @@ async function Post({params: { slug }}: Props) {
                     {/*TODO Author BIO*/}
                 </div>
             </div>
-            <div className="flex items-center justify-end space-x-2">
+            <div className="flex items-center justify-end mt-auto space-x-2">
                 {post.categories.map ((category) => (
                     <p key={category._id} className="bg-gray-800 text-white px-3 py-1 
                     rounded-full text-sm font-semibold mt-4">{category.title}</p>
@@ -90,11 +90,9 @@ async function Post({params: { slug }}: Props) {
 
             </div>
         </section>
-        <div className="flex justify-center p-2 m-2">
-            <div className="justify-left max-w-3xl font-light first-letter:font-serif first-letter:text-3xl first-letter:text-sky-700 first-letter:font-semibold" >
-            <PortableText value={post.body} components={RichTextComponents}/>
+            <div className="max-w-3xl ml-auto mt-5 font-light first-letter:font-serif first-letter:text-3xl first-letter:text-sky-700 first-letter:font-semibold" >
+        <PortableText value={post.body} components={RichTextComponents}/>
             </div>
-        </div>
         </article>
     )
 }

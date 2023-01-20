@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   _experimental: {
-    appDir: true,
+    appDir: true
   },
   get experimental() {
     return this._experimental;
