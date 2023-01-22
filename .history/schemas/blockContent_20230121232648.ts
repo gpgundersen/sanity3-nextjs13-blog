@@ -42,17 +42,21 @@ export default defineType({
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
           {
-            title: 'URL',
-            name: 'link',
-            type: 'object',
+            name: "internalLink",
+            type: "object",
+            title: "Internal link",
             fields: [
               {
-                title: 'URL',
-                name: 'href',
-                type: 'url',
+                name: "reference",
+                type: "reference",
+                title: "Reference",
+                to: [
+                  { type: "glossary" }
+                  // other types you may want to link to
+                ]
               },
             ],
-          },
+          }
         ],
       }
     }),

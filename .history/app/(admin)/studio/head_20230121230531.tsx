@@ -7,10 +7,12 @@ import {NextStudioHead} from 'next-sanity/studio/head'
 export default function CustomStudioHead() {
   return (
     <>
-      <NextStudioHead favicons={true} />
+      <NextStudioHead favicons={false} />
       <link
         rel="icon"
-        href='/favicon.ico'
+        type="image/png"
+        sizes="32x32"
+        href='../public/favicon.ico'
       />
     </>
   )

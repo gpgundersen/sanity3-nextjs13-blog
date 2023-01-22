@@ -50,6 +50,7 @@ interface Block {
     _type: "block"
     children: Span[]
     markDefs: any[]
+    marks: internalLink
     style: "normal" | "h1" | "h2" | "h3" | "h4" | "blockquote"
 }
 

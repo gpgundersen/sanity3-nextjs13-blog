@@ -24,8 +24,9 @@ interface Author extends Base {
 }
 
 interface Glossary extends Base {
+    [x: string]: any
     definition: Block[]
-    image: Image
+    mainImage: Image
     term: string
     slug: Slug
 }

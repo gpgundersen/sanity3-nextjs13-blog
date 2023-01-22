@@ -74,3 +74,9 @@ interface Title {
     _type: "string"
     current: string
 }
+
+interface CustomLinkSchema {
+    href: any;
+    children: any;
+    passHref?: any;
+}

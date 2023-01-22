@@ -4,7 +4,7 @@ import  Image  from "next/image"
 import urlFor from "../../../../lib/urlFor"
 import { PortableText } from "@portabletext/react"
 import { RichTextComponents } from "../../../../components/RichTextComponents"
-
+import CustomLinkSchema from "../../../../components/CustomLinkSchema"
 
 type Props = {
     params: {
@@ -13,7 +13,6 @@ type Props = {
 }
 
 export const revalidate = 1800;
-
 
 export async function generateStaticParams() {
     const query = groq`*[_type=='post']

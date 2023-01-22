@@ -10,7 +10,9 @@ export default function CustomStudioHead() {
       <NextStudioHead favicons={true} />
       <link
         rel="icon"
-        href='/favicon.ico'
+        type="image/png"
+        sizes="32x32"
+        href='../public/favicon.ico'
       />
     </>
   )

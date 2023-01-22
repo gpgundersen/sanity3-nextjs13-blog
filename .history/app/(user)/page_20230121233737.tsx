@@ -9,7 +9,14 @@ const query = groq`
     *[_type=='post']{
         ...,
         author->,
-        categories[]->
+        categories[]->,
+        body[] {
+            ...,
+            _type == "internalLink" => {
+                ...,
+                "slug": @.reference-> slug
+            }
+        }
     } | order(_createdAt desc)
 `
 export const revalidate = 1800;

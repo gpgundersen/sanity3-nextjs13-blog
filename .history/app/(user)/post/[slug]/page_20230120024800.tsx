@@ -5,7 +5,6 @@ import urlFor from "../../../../lib/urlFor"
 import { PortableText } from "@portabletext/react"
 import { RichTextComponents } from "../../../../components/RichTextComponents"
 
-
 type Props = {
     params: {
         slug: string,
@@ -13,7 +12,6 @@ type Props = {
 }
 
 export const revalidate = 1800;
-
 
 export async function generateStaticParams() {
     const query = groq`*[_type=='post']

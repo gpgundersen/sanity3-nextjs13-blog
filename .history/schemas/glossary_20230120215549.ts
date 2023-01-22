@@ -44,7 +44,7 @@ export default defineType({
   preview: {
     select: {
       title: 'term',
-      media: 'image',
+      media: 'mainImage',
     },
   },
 })

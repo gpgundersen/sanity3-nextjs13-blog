@@ -51,10 +51,15 @@ export default defineType({
                 name: 'href',
                 type: 'url',
               },
+              {
+                title: 'Open in new window',
+                name: 'blank',
+                type: 'boolean',
+              },
             ],
           },
         ],
-      }
+      },
     }),
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array

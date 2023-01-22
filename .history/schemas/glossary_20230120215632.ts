@@ -22,7 +22,7 @@ export default defineType({
     defineField({
       name: 'image',
       title: 'Image',
-      type: 'image',
+      type: 'mainImage',
       options: {
         hotspot: true,
       },
@@ -44,7 +44,7 @@ export default defineType({
   preview: {
     select: {
       title: 'term',
-      media: 'image',
+      media: 'mainImage',
     },
   },
 })

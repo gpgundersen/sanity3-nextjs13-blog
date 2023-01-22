@@ -10,6 +10,13 @@ const query = groq`
         ...,
         author->,
         categories[]->
+        body[] {
+            ...,
+            _type == "internalLink" => {
+                ...,
+                "slug": @.reference-> slug
+            }
+        }
     } | order(_createdAt desc)
 `
 export const revalidate = 1800;
