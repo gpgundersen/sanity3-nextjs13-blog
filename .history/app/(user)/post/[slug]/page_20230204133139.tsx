@@ -53,7 +53,7 @@ async function Post({params: { slug }}: Props) {
                     />
             </div>
 
-        <section className="p-5 bg-slate-500 w-full rounded-sm">
+        <section className="p-5 bg-slate-500 w-full rounded-sm drop-shadow-sm">
             <div className="flex flex-col md:flex-row  justify-between gap-y-5">
             <div>
                 <h1 className="text-3xl font-semibold">{post.title}</h1>

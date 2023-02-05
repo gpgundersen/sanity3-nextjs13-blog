@@ -38,7 +38,7 @@ async function Author({params: { slug }}: Props) {
 const author: Author = await client.fetch(query, { slug });
 
 return (
-    <article className="px-10 pb-28 bg-orange-100">
+    <article className="px-10 pb-28">
         <section className="space-y-2 border border-slate-500 text-white">
             <div className="relative min-h-56 flex flex-col md:flex-row">
             <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
@@ -65,7 +65,7 @@ return (
             </section>
             </div>
         </section>
-        <div className="flex justify-center p-2 m-2 bg-white drop-shadow-md">
+        <div className="flex justify-center p-2 m-2">
             <div className="justify-left max-w-3xl font-light first-letter:font-serif first-letter:text-3xl first-letter:text-sky-700 first-letter:font-semibold">
                 <PortableText value={author.bio} components={RichTextComponents}/>
             </div>

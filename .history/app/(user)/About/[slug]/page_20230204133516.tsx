@@ -65,7 +65,7 @@ return (
             </section>
             </div>
         </section>
-        <div className="flex justify-center p-2 m-2 bg-white drop-shadow-md">
+        <div className="flex justify-center p-2 m-2">
             <div className="justify-left max-w-3xl font-light first-letter:font-serif first-letter:text-3xl first-letter:text-sky-700 first-letter:font-semibold">
                 <PortableText value={author.bio} components={RichTextComponents}/>
             </div>

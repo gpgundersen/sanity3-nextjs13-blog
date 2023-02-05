@@ -42,7 +42,7 @@ async function Post({params: { slug }}: Props) {
 
     return (
         <article className="px-10 pb-28 bg-orange-100">
-            <section className="space-y-2 border border-slate-500 text-white rounded-md">
+            <section className="space-y-2 border border-slate-500 text-white">
             <div className="relative min-h-56 flex flex-col md:flex-row">
             <div className="absolute top-0 w-full h-full opacity-10 blur-sm p-10">
                 <Image
@@ -53,7 +53,7 @@ async function Post({params: { slug }}: Props) {
                     />
             </div>
 
-        <section className="p-5 bg-slate-500 w-full rounded-sm">
+        <section className="p-5 bg-slate-500 w-full">
             <div className="flex flex-col md:flex-row  justify-between gap-y-5">
             <div>
                 <h1 className="text-3xl font-semibold">{post.title}</h1>
@@ -92,7 +92,7 @@ async function Post({params: { slug }}: Props) {
 
             </div>
         </section>
-        <div className="flex justify-center p-2 m-2 bg-white drop-shadow-md">
+        <div className="flex justify-center p-2 m-2 bg-white">
             <div className="justify-left max-w-3xl font-light first-letter:font-serif first-letter:text-3xl first-letter:text-sky-700 first-letter:font-semibold" >
             <PortableText value={post.body} components={RichTextComponents}/>
             </div>
