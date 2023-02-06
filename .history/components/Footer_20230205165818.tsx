@@ -9,9 +9,9 @@ function Footer() {
         <div className="flex justify-start">
             <p className="text-white m-2 font-light">Visit our</p><FbIcon />
         </div>
-        <div className="flex flex-wrap justify-end space-x-6 space-y-2">
+        <div className="flex justify-end space-x-6 md:flex-col">
           <p className="text-sm">Powered by</p><NextJsIcon /><SanityIcon /><TailwindIcon /></div>
-       <h6 className="font-serif text-slate-500 text-center mt-6">© wisenexus.net, 2023</h6>
+       <h6 className="font-serif text-slate-500 text-center">© wisenexus.net, 2023</h6>
       </div>
     </div>
 }
