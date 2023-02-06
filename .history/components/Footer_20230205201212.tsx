@@ -9,14 +9,14 @@ function Footer() {
         <div className="flex justify-start p-1">
             <p className="text-white m-2 font-light">Visit our</p><FbIcon />
         </div>
-        <div className="flex flex-wrap justify-end space-x-5 space-y-2">
-          <p className="text-sm">Powered by</p>
-          <ul>
+        <div className="flex flex-wrap justify-end space-x-5 space-y-2 md:flex-row">
+          
+            <p className="text-sm">Powered by</p></div>
+          <ul className="flex justify-end">
             <li><NextJsIcon /></li>
             <li><SanityIcon /></li>
-            <li className="mt-2.5"><TailwindIcon /></li>
+            <li><TailwindIcon /></li>
           </ul>
-          </div>
        <h6 className="font-serif text-slate-500 text-center mt-6">© wisenexus.net, 2023</h6>
       </div>
     </div>

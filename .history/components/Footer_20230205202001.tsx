@@ -9,7 +9,7 @@ function Footer() {
         <div className="flex justify-start p-1">
             <p className="text-white m-2 font-light">Visit our</p><FbIcon />
         </div>
-        <div className="flex flex-wrap justify-end space-x-5 space-y-2">
+        <div className="flex flex-wrap justify-end space-x-5 space-y-2 h-10 w-10">
           <p className="text-sm">Powered by</p>
           <ul>
             <li><NextJsIcon /></li>

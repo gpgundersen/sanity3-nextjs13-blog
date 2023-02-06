@@ -14,7 +14,7 @@ function Footer() {
           <ul>
             <li><NextJsIcon /></li>
             <li><SanityIcon /></li>
-            <li className="mt-2.5"><TailwindIcon /></li>
+            <li className="mt-2"><TailwindIcon /></li>
           </ul>
           </div>
        <h6 className="font-serif text-slate-500 text-center mt-6">© wisenexus.net, 2023</h6>
