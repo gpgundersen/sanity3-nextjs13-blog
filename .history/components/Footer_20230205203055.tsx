@@ -6,7 +6,7 @@ import TailwindIcon from "./TailwindIcon"
 function Footer() {
     return <div className="bg-slate-800 text-slate-200">
       <div className="container flex flex-col p-1">
-        <div className="flex justify-end p-2 mr-7">
+        <div className="flex justify-end p-2 mr-8">
             <p className="text-white m-2 font-light">Visit our</p><FbIcon />
         </div>
         <div className="flex flex-wrap justify-end space-x-5 space-y-2">
