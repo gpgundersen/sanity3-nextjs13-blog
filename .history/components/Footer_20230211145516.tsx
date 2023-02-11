@@ -19,10 +19,10 @@ function Footer() {
             <li className="mt-2.5"><TailwindIcon /></li>
           </ul>
           </div>
-          <div className="flex justify-center bg-gradient-to-b from-slate-800 via-slate-800 to-black">
+          <div className="flex justify-center mt-1 p-2 bg-gradient-to-b from-slate-800 to-slate-900">
             <p className="text-white m-1 font-light">Visit our</p><FbIcon />
         </div>
-       <h6 className="font-serif text-slate-600 text-center bg-black">© wisenexus.net, 2023</h6>
+       <p className="font-serif text-slate-600 text-center bg-black mt-1">© wisenexus.net, 2023</p>
        </div>
 }
 

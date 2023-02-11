@@ -5,7 +5,7 @@ import TailwindIcon from "./TailwindIcon"
 import Link from "next/link"
 
 function Footer() {
-    return <div className="bg-slate-800 text-slate-200">
+    return <div className="bg-slate-900 text-slate-200">
         <div className="flex items-center justify-between space-x-5 space-y-2 p-1">
           <ul className="font-light text-xl m-2 p-2">
             <li className="text-sm font-thin underline decoration-black mb-2">Navigation</li>
@@ -19,7 +19,7 @@ function Footer() {
             <li className="mt-2.5"><TailwindIcon /></li>
           </ul>
           </div>
-          <div className="flex justify-center bg-gradient-to-b from-slate-800 via-slate-800 to-black">
+          <div className="flex justify-center bg-gradient-to-b from-slate-900 to-black">
             <p className="text-white m-1 font-light">Visit our</p><FbIcon />
         </div>
        <h6 className="font-serif text-slate-600 text-center bg-black">© wisenexus.net, 2023</h6>
