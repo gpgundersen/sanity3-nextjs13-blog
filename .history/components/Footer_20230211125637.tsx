@@ -5,7 +5,7 @@ import TailwindIcon from "./TailwindIcon"
 import Link from "next/link"
 
 function Footer() {
-    return <div className="bg-slate-800 text-slate-200">
+    return <div className="bg-slate-800 text-slate-200 border-2 border-stone-700 rounded-sm ">
         <div className="flex items-center justify-between space-x-5 space-y-2 p-1">
           <ul className="font-light text-xl m-2 p-2">
           <li className="text-sm font-thin underline decoration-black mb-2">Navigation</li>

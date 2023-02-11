@@ -8,12 +8,12 @@ function Footer() {
     return <div className="bg-slate-800 text-slate-200">
         <div className="flex items-center justify-between space-x-5 space-y-2 p-1">
           <ul className="font-light text-xl m-2 p-2">
-          <li className="text-sm font-thin underline decoration-black mb-2">Navigation</li>
+          <li className="text-sm font-thin mb-2">Navigation</li>
           <li><Link href="/" className="hover:bg-black">Home</Link></li>
           <li><Link href="/about/wise-phil" className="hover:bg-black">About</Link></li>
           </ul>
-          <ul className="p-1">
-            <li className="text-sm font-thin underline decoration-black">Powered by</li>
+          <ul className="border-2 border-stone-700 rounded-sm p-1">
+            <li className="text-sm font-thin decoration-slate-900">Powered by</li>
             <li><NextJsIcon /></li>
             <li><SanityIcon /></li>
             <li className="mt-2.5"><TailwindIcon /></li>

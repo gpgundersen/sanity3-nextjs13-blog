@@ -12,7 +12,7 @@ function Footer() {
           <li><Link href="/" className="hover:bg-black">Home</Link></li>
           <li><Link href="/about/wise-phil" className="hover:bg-black">About</Link></li>
           </ul>
-          <ul className="p-1">
+          <ul className="border-2 border-stone-700 rounded-sm p-1">
             <li className="text-sm font-thin underline decoration-black">Powered by</li>
             <li><NextJsIcon /></li>
             <li><SanityIcon /></li>
